@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/raster-gen/automation-js/issues"
   },
-  "homepage": "https://github.com/raster-gen/automation-js#readme"
+  "homepage": "https://github.com/raster-gen/automation-js#readme",
+  "devDependencies": {
+    "fs-extra": "^10.1.0"
+  }
 }
