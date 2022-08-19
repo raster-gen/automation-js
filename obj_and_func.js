@@ -37,7 +37,7 @@ const calcOfType = arg => console.log(typeof arg);
 
 // - Write a function that determines whether a number is prime or not
 const isPrime = num => {
-  for (let i = 2; i < Math.sqrt(num); i++) {
+  for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) return false;
   }
   return num > 1;
