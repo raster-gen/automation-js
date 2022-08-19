@@ -60,3 +60,8 @@ const printPrimeNumbers = range => {
 };
 
 // 10. Implement a loop that prints odd numbers to the console
+const printOddNumbers = range => {
+  for (let i = 0; i < range; i++) {
+    if (i % 2 !== 0) console.log(i);
+  }
+};
