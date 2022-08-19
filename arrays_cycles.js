@@ -46,31 +46,17 @@ for (let i = 0; i < 10; i++) {
 
 // 9. Implement a loop that prints prime numbers to the console
 
-// if (num === 1 || num === 0) {
-//   return false;
-// } else {
-//   for(let i = 2; i < num; i++) {
-//     if(num % i === 0) {
-//       return false;
-//     }
-//   }
-//   return true;
-// }
-
 const isPrime = num => {
-  for (let i = 2; i < Math.sqrt(num); i++) {
+  for (let i = 2; i <= Math.sqrt(num); i++) {
     if (num % i === 0) return false;
   }
   return num > 1;
 };
-console.log(isPrime(4));
 
 const printPrimeNumbers = range => {
   for (let i = 0; i < range; i++) {
     if (isPrime(i)) console.log(i);
   }
 };
-
-printPrimeNumbers(20);
 
 // 10. Implement a loop that prints odd numbers to the console
